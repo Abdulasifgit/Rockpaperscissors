@@ -7,20 +7,101 @@
     <title>Document</title>
 </head>
 <body>
+
+<button class="rock">Rock</button>
+<button class="paper">Paper</button>
+<button class="scissors">Scissors</button>
+
+<div class="comscore">  </div>
+<div class="plascore"> </div>
+
     <script>
-     
-
-     getComputerChoice(){
-        let num=math.floor(math.random()*3);
+     const rock=document.querySelector('.rock');
+     rock.addEventListener('click',function(){
+        const playerSelection="rock";
+        console.log(playerSelection)
+        
+    function getComputerChoice(){
+        let num=Math.floor(Math.random()*3);
         if(num==0){
-            return rock
+            return "rock"
         }else if(num==1){
-            return scissors
-        }else return paper
+            return "scissors"
+        }else return "paper"
      }
+     const computerSelection=getComputerChoice();
+     console.log(computerSelection)
+    })
+ 
+        const paper=document.querySelector('.paper');
+        paper.addEventListener('click',function (){
+            const playerSelection="paper";
+            console.log(playerSelection)
+        
+                
+    function getComputerChoice(){
+        let num=Math.floor(Math.random()*3);
+        if(num==0){
+            return "rock"
+        }else if(num==1){
+            return "scissors"
+        }else return "paper"
+     }
+     const computerSelection=getComputerChoice();
+     console.log(computerSelection)
 
-     const input=prompt("select one of the rock ,paper or scissors");
+        })
 
+        const scissors=document.querySelector('.scissors');
+        scissors.addEventListener('click', function(){
+            const playerSelection="scissors";
+            console.log(playerSelection);
+            
+
+                
+    function getComputerChoice(){
+        let num=Math.floor(Math.random()*3);
+        if(num==0){
+            return "rock"
+        }else if(num==1){
+            return "scissors"
+        }else return "paper"
+     }
+     const computerSelection=getComputerChoice();
+     console.log(computerSelection)
+
+        })
+
+
+
+
+     
+     const playerSelection="";
+     console.log(playerSelection);
+    
+    var result=result;
+    console.log(result)
+
+     function game(){
+      for(i=0;i<5;i++){
+    
+      function playround(computerSelection,playerSelection){
+         if(computerSelection=="rock"&&playerSelection=="scissors"||computerSelection=="paper"&&playerSelection=="rock"||computerSelection=="scissors"&&playerSelection=="paper")
+        {
+            let result="you lose computer wins"
+            return result;
+            let comScore=+comScore+1;
+            return comScore;
+        }else if (playerSelection==computerSelection){
+            let result="thats a tie";
+            return result;
+        }else{let  result="you win"
+        return result;
+
+        let plaScore=+plaScore+1;
+        return plaScore;
+     
+        }}}}
     </script>
 </body>
 </html>
