@@ -1,0 +1,41 @@
+body{
+background-color: #132C25;
+color:red;
+font-family: sans-serif;
+}
+.playphase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    gap: 12px;
+    margin-top: 5%;
+    margin-bottom: 12px;
+}
+.resphase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: yellowgreen;
+}
+button{
+    padding: 30px;
+    border-radius: 12px;
+    border-color: black;
+    
+}.result{
+    color: rgb(221, 221, 226);
+    font-size: large;
+    font-weight: 700;
+}
+button:hover{
+    background-color: red;
+}   
